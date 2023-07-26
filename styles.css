@@ -1,0 +1,141 @@
+body {
+  overscroll-behavior: none;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+.custom-content * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-pre {
+  height: 50vh;
+  position: relative;
+}
+
+.section-1 {
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+}
+
+.cube-wrapper {
+  position: absolute;
+  width: 20vw;
+  left: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  /* overflow: hidden; */
+}
+
+.cube {
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+
+.blue {
+  position: absolute;
+  top: 61%;
+  left: 70%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  backdrop-filter: blur(10px);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.blue img {
+  width: 100%;
+  height: 100%;
+}
+
+.gold {
+  position: absolute;
+  top: 63%;
+  left: 33%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.gold img {
+  width: 100%;
+  height: 100%;
+}
+
+.orange {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.orange img {
+  width: 100%;
+  height: 100%;
+}
+
+.orange-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  color: #fff;
+  opacity: 0;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40vw 10vw 0vw 0;
+}
+
+.blue-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  color: #fff;
+  opacity: 0;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40vw 0 0;
+}
+
+.gold-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  opacity: 0;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 50vw 0;
+}
